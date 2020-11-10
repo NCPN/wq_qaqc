@@ -11,7 +11,7 @@ Begin InputTables
 End
 Begin OutputColumns
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblCharacteristics.DISPLAY_NAME"
     Expression ="tblVisits.START_DATE"
     Expression ="tblResults.VALUE_STATUS"
@@ -79,10 +79,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblLocations.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblVisits.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -102,70 +98,74 @@ Begin
         dbBoolean "ColumnHidden" ="0"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =3
-    Top =35
-    Right =1342
-    Bottom =783
+    Left =27
+    Top =17
+    Right =1015
+    Bottom =471
     Left =-1
     Top =-1
-    Right =1307
-    Bottom =166
-    Left =96
+    Right =964
+    Bottom =184
+    Left =0
     Top =0
     ColumnsShown =539
     Begin
-        Left =-48
+        Left =48
         Top =12
-        Right =96
+        Right =192
         Bottom =156
         Top =0
         Name ="tblProjects"
         Name =""
     End
     Begin
-        Left =144
-        Top =12
-        Right =288
-        Bottom =156
+        Left =38
+        Top =164
+        Right =182
+        Bottom =308
         Top =0
         Name ="tblLocations"
         Name =""
     End
     Begin
-        Left =642
-        Top =14
-        Right =786
-        Bottom =158
+        Left =447
+        Top =11
+        Right =591
+        Bottom =155
         Top =0
         Name ="tblActivities"
         Name =""
     End
     Begin
-        Left =382
-        Top =14
-        Right =572
-        Bottom =158
+        Left =229
+        Top =13
+        Right =419
+        Bottom =157
         Top =0
         Name ="tblVisits"
         Name =""
     End
     Begin
-        Left =849
-        Top =13
-        Right =1008
-        Bottom =155
+        Left =628
+        Top =6
+        Right =787
+        Bottom =148
         Top =0
         Name ="tblResults"
         Name =""
     End
     Begin
-        Left =1064
-        Top =13
-        Right =1208
-        Bottom =157
+        Left =823
+        Top =7
+        Right =967
+        Bottom =151
         Top =0
         Name ="tblCharacteristics"
         Name =""

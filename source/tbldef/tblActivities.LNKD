@@ -1,3 +1,4 @@
 ﻿tblActivities
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblActivities
+LocFdAct_IS_NUMBER;+LocFdAct_ORG_ID

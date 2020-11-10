@@ -28,14 +28,14 @@ Begin
 End
 Begin
     State =0
-    Left =0
-    Top =0
-    Right =1339
-    Bottom =748
+    Left =71
+    Top =35
+    Right =710
+    Bottom =381
     Left =-1
     Top =-1
-    Right =1021
-    Bottom =161
+    Right =615
+    Bottom =144
     Left =0
     Top =0
     ColumnsShown =539

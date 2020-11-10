@@ -1,3 +1,4 @@
 ﻿tblImportHistory
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblImportHistory
+ImportIS;+Org_ID

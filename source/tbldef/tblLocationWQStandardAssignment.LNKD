@@ -1,3 +1,4 @@
 ﻿tblLocationWQStandardAssignment
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblLocationWQStandardAssignment
+StandardAss_IS_NUMBER;+StandardASS_ORG_ID

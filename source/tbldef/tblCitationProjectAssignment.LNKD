@@ -1,3 +1,4 @@
 ﻿tblCitationProjectAssignment
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblCitationProjectAssignment
+LocCitPrAss_IS_Number;+LocCitPrAss_Org_ID

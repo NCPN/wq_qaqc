@@ -1,3 +1,4 @@
 ﻿tblLocationProjectAssignment
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblLocationProjectAssignment
+LocStPrAss_IS_NUMBER;+LocStPrAss_ORG_ID

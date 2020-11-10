@@ -13,7 +13,7 @@ Begin OutputColumns
     Expression ="tblLocationStationGroups.NAME"
     Expression ="tblLocationStationGroups.DESCRIPTION_TEXT"
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
 End
 Begin Joins
     LeftTable ="tblLocationStationGroups"
@@ -80,12 +80,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblLocations.[Station Name]"
-        dbInteger "ColumnWidth" ="5865"
-        dbBoolean "ColumnHidden" ="0"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblLocationStationGroups.ID_CODE"
         dbInteger "ColumnWidth" ="1920"
         dbBoolean "ColumnHidden" ="0"
@@ -103,6 +97,10 @@ Begin
         dbBoolean "ColumnHidden" ="0"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
@@ -112,8 +110,8 @@ Begin
     Bottom =697
     Left =-1
     Top =-1
-    Right =1329
-    Bottom =169
+    Right =1333
+    Bottom =148
     Left =0
     Top =0
     ColumnsShown =539

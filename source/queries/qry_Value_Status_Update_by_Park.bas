@@ -1,10 +1,8 @@
 ﻿Operation =4
 Option =0
-Where ="(((tblResults.VALUE_STATUS)=\"P\") AND ((tblProjects.ProjectID)=\"NCPN_UTE\") AN"
-    "D ((tblLocationStationGroups.ID_CODE)=\"brca\" Or (tblLocationStationGroups.ID_C"
-    "ODE)=\"care\" Or (tblLocationStationGroups.ID_CODE)=\"zion\") AND ((tblVisits.ST"
-    "ART_DATE) Between #9/1/2005# And #9/30/2013#) AND ((tblCharacteristics.FIELD_LAB"
-    ")=\"Lab\"))"
+Where ="(((tblResults.VALUE_STATUS)=\"P\") AND ((tblProjects.ProjectID)=\"NCPN_UTE\" Or "
+    "(tblProjects.ProjectID)=\"NCPN_UTM\") AND ((tblVisits.START_DATE) Between #10/1/"
+    "2018# And #9/30/2019#))"
 Begin InputTables
     Name ="tblProjects"
     Name ="tblLocationProjectAssignment"
@@ -167,14 +165,14 @@ Begin
 End
 Begin
     State =0
-    Left =14
-    Top =243
-    Right =1267
-    Bottom =768
+    Left =17
+    Top =22
+    Right =973
+    Bottom =500
     Left =-1
     Top =-1
-    Right =1221
-    Bottom =215
+    Right =932
+    Bottom =262
     Left =0
     Top =0
     ColumnsShown =579
@@ -188,73 +186,73 @@ Begin
         Name =""
     End
     Begin
-        Left =240
-        Top =12
-        Right =384
-        Bottom =156
+        Left =47
+        Top =167
+        Right =191
+        Bottom =311
         Top =0
         Name ="tblLocationProjectAssignment"
         Name =""
     End
     Begin
-        Left =432
-        Top =12
-        Right =576
-        Bottom =156
+        Left =243
+        Top =10
+        Right =387
+        Bottom =154
         Top =0
         Name ="tblLocations"
         Name =""
     End
     Begin
-        Left =624
-        Top =12
-        Right =768
-        Bottom =156
+        Left =422
+        Top =6
+        Right =580
+        Bottom =150
         Top =0
         Name ="tblLocationStationGroupAssignment"
         Name =""
     End
     Begin
-        Left =816
-        Top =12
-        Right =960
-        Bottom =156
+        Left =612
+        Top =7
+        Right =763
+        Bottom =151
         Top =0
         Name ="tblLocationStationGroups"
         Name =""
     End
     Begin
-        Left =178
-        Top =168
-        Right =322
-        Bottom =312
+        Left =232
+        Top =170
+        Right =376
+        Bottom =314
         Top =0
         Name ="tblVisits"
         Name =""
     End
     Begin
-        Left =368
-        Top =162
-        Right =512
-        Bottom =306
+        Left =401
+        Top =166
+        Right =545
+        Bottom =310
         Top =0
         Name ="tblActivities"
         Name =""
     End
     Begin
-        Left =550
+        Left =564
         Top =159
-        Right =710
+        Right =724
         Bottom =303
         Top =0
         Name ="tblResults"
         Name =""
     End
     Begin
-        Left =724
-        Top =158
-        Right =868
-        Bottom =302
+        Left =750
+        Top =157
+        Right =894
+        Bottom =301
         Top =0
         Name ="tblCharacteristics"
         Name =""

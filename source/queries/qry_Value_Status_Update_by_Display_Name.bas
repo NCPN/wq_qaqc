@@ -1,10 +1,10 @@
 ﻿Operation =4
 Option =0
 Where ="(((tblResults.VALUE_STATUS)<>\"R\") AND ((tblProjects.ProjectID)=\"NCPN_UTE\" Or"
-    " (tblProjects.ProjectID)=\"NCPN_UTM\") AND ((tblVisits.START_DATE) Between #3/1/"
-    "2009# And #9/30/2015#) AND ((tblCharacteristics.FIELD_LAB)=\"Lab\") AND ((tblCha"
-    "racteristics.DISPLAY_NAME)=\"pH\" Or (tblCharacteristics.DISPLAY_NAME)=\"Specifi"
-    "c conductance\" Or (tblCharacteristics.DISPLAY_NAME)=\"Turbidity\"))"
+    " (tblProjects.ProjectID)=\"NCPN_UTM\") AND ((tblVisits.START_DATE) Between #10/1"
+    "/2018# And #9/30/2019#) AND ((tblCharacteristics.FIELD_LAB)=\"Lab\") AND ((tblCh"
+    "aracteristics.DISPLAY_NAME)=\"pH\" Or (tblCharacteristics.DISPLAY_NAME)=\"Specif"
+    "ic conductance\" Or (tblCharacteristics.DISPLAY_NAME)=\"Turbidity\"))"
 Begin InputTables
     Name ="tblProjects"
     Name ="tblLocationProjectAssignment"
@@ -150,14 +150,14 @@ Begin
 End
 Begin
     State =0
-    Left =11
-    Top =15
-    Right =1264
-    Bottom =540
+    Left =29
+    Top =26
+    Right =923
+    Bottom =441
     Left =-1
     Top =-1
-    Right =1221
-    Bottom =182
+    Right =870
+    Bottom =196
     Left =0
     Top =0
     ColumnsShown =579

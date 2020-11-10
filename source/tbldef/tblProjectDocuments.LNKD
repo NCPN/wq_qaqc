@@ -1,3 +1,4 @@
 ﻿tblProjectDocuments
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblProjectDocuments
+LocDoc_IS_NUMBER;+LocDOC_ORG_ID

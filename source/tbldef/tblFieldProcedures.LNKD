@@ -1,3 +1,4 @@
 ﻿tblFieldProcedures
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblFieldProcedures
+LocFLDPR_IS_NUMBER;+LocFLDPR_Org_ID

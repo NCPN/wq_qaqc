@@ -1,3 +1,4 @@
 ﻿tblVisits_Pics
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblVisits_Pics
+LocPic_IS_NUMBER;+LocPic_ORG_ID

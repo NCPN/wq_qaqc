@@ -1,4 +1,4 @@
-﻿Version =20
+﻿Version =21
 VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
@@ -14,10 +14,10 @@ Begin Form
     GridY =24
     DatasheetFontHeight =9
     ItemSuffix =35
-    Left =6810
-    Top =2190
-    Right =13755
-    Bottom =6240
+    Left =5385
+    Top =1755
+    Right =12330
+    Bottom =5805
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x1385341e7574e340
@@ -171,7 +171,7 @@ Begin Form
                     Top =840
                     Width =1860
                     TabIndex =3
-                    ColumnInfo ="\"ProjectID\";\"\";\"Project Name\";\"\";\"10\";\"16\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"70\""
                     Name ="ProjectID"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT [tblProjects].[ProjectID], [tblProjects].[ProjectName] FROM tblProjects O"
@@ -304,7 +304,7 @@ On Error GoTo Err_CanopyGap_Click
    ' Initialize a bunch of fields
    NameSave = Obsvalues!DISPLAY_NAME
    StationSave = Obsvalues!StationID
-   strStationName = Obsvalues![Station Name]
+   strStationName = Obsvalues!StationName
    RecordCount = 0
    dBeginDate = Obsvalues!START_DATE
    MaxValue = Obsvalues!Bias
@@ -339,7 +339,7 @@ On Error GoTo Err_CanopyGap_Click
        WorkOutput!RecCount = RecordCount
        WorkOutput.Update  ' Write record
        StationSave = Obsvalues!StationID
-       strStationName = Obsvalues![Station Name]
+       strStationName = Obsvalues!StationName
        NameSave = Obsvalues!DISPLAY_NAME
        RecordCount = 0
        dBeginDate = Obsvalues!START_DATE

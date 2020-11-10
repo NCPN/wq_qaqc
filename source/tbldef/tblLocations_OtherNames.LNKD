@@ -1,3 +1,4 @@
 ﻿tblLocations_OtherNames
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblLocations_OtherNames
+LocRFLBL_IS_NUMBER;+LocRFLBL_ORG_ID

@@ -1,3 +1,4 @@
 ﻿tblUserHarmony
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblUserHarmony
+HarmonyIS;+Org_ID

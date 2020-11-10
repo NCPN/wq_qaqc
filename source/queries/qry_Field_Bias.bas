@@ -12,7 +12,7 @@ Begin InputTables
 End
 Begin OutputColumns
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblVisits.START_DATE"
     Expression ="tblCharacteristics.DISPLAY_NAME"
     Expression ="tblResults.BIAS"
@@ -70,15 +70,7 @@ dbBoolean "OrderByOnLoad" ="-1"
 dbBoolean "TotalsRow" ="0"
 Begin
     Begin
-        dbText "Name" ="tblProjects.ProjectID"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblLocations.StationID"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblLocations.[Station Name]"
         dbLong "AggregateType" ="-1"
     End
     Begin
@@ -92,129 +84,79 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblResults.VALUE_STATUS"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblResults.LAB_REMARKS"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblResults.RESULT_COMMENT"
-        dbInteger "ColumnWidth" ="3000"
-        dbBoolean "ColumnHidden" ="0"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblResults.DETECTION_CONDITION"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblResults.RESULT_TEXT"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblVisits.VISIT_COMMENT"
-        dbInteger "ColumnWidth" ="2850"
-        dbBoolean "ColumnHidden" ="0"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblResults.PRECISION"
-        dbInteger "ColumnWidth" ="1200"
-        dbBoolean "ColumnHidden" ="0"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblCharacteristics.FIELD_LAB"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="Expr1"
-        dbInteger "ColumnWidth" ="4095"
-        dbBoolean "ColumnHidden" ="0"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="AMS+"
-        dbInteger "ColumnWidth" ="1800"
-        dbBoolean "ColumnHidden" ="0"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="Accept"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblResults.BIAS"
         dbInteger "ColumnWidth" ="1200"
         dbBoolean "ColumnHidden" ="0"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =0
-    Top =0
-    Right =1339
-    Bottom =748
+    Left =46
+    Top =9
+    Right =1097
+    Bottom =463
     Left =-1
     Top =-1
-    Right =1307
-    Bottom =125
+    Right =1027
+    Bottom =218
     Left =0
     Top =0
     ColumnsShown =539
     Begin
-        Left =48
-        Top =12
-        Right =192
-        Bottom =156
+        Left =14
+        Top =10
+        Right =158
+        Bottom =154
         Top =0
         Name ="tblProjects"
         Name =""
     End
     Begin
-        Left =240
-        Top =12
-        Right =384
-        Bottom =156
+        Left =20
+        Top =163
+        Right =164
+        Bottom =307
         Top =0
         Name ="tblLocations"
         Name =""
     End
     Begin
-        Left =738
-        Top =14
-        Right =882
-        Bottom =158
+        Left =448
+        Top =22
+        Right =592
+        Bottom =166
         Top =0
         Name ="tblActivities"
         Name =""
     End
     Begin
-        Left =478
-        Top =14
-        Right =668
-        Bottom =158
+        Left =210
+        Top =30
+        Right =400
+        Bottom =174
         Top =0
         Name ="tblVisits"
         Name =""
     End
     Begin
-        Left =945
-        Top =13
-        Right =1104
-        Bottom =155
+        Left =638
+        Top =23
+        Right =797
+        Bottom =165
         Top =0
         Name ="tblResults"
         Name =""
     End
     Begin
-        Left =1160
-        Top =13
-        Right =1304
-        Bottom =157
+        Left =849
+        Top =27
+        Right =993
+        Bottom =171
         Top =0
         Name ="tblCharacteristics"
         Name =""

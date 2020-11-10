@@ -1,3 +1,4 @@
 ﻿tblAnalyticalProcedures
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblAnalyticalProcedures
+LocANLPR_IS_NUMBER;+LocANLPR_ORG_ID

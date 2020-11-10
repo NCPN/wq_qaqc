@@ -16,7 +16,7 @@ Begin OutputColumns
     Expression ="tblProjects.ProjectID"
     Expression ="tblLocations.StationID"
     Expression ="tblVisits.START_DATE"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblCharacteristics.DISPLAY_NAME"
     Alias ="Concentration"
     Expression ="IIf(IsNumeric([RESULT_TEXT]),CDbl([RESULT_TEXT]),0)"
@@ -94,10 +94,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblLocations.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblVisits.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -105,17 +101,21 @@ Begin
         dbText "Name" ="Concentration"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =23
-    Top =15
-    Right =1362
-    Bottom =763
+    Left =8
+    Top =11
+    Right =1025
+    Bottom =426
     Left =-1
     Top =-1
-    Right =1307
-    Bottom =99
+    Right =993
+    Bottom =163
     Left =0
     Top =0
     ColumnsShown =539
@@ -138,27 +138,27 @@ Begin
         Name =""
     End
     Begin
-        Left =738
-        Top =14
-        Right =882
-        Bottom =158
+        Left =699
+        Top =13
+        Right =843
+        Bottom =157
         Top =0
         Name ="tblActivities"
         Name =""
     End
     Begin
-        Left =478
-        Top =14
-        Right =668
-        Bottom =158
+        Left =450
+        Top =12
+        Right =640
+        Bottom =156
         Top =0
         Name ="tblVisits"
         Name =""
     End
     Begin
-        Left =945
+        Left =889
         Top =13
-        Right =1104
+        Right =1048
         Bottom =155
         Top =0
         Name ="tblResults"

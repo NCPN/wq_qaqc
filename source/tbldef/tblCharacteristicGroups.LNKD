@@ -1,3 +1,4 @@
 ﻿tblCharacteristicGroups
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblCharacteristicGroups
+LocCHGRP_IS_NUMBER;+LocCHGRP_ORG_ID

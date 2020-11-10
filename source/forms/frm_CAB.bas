@@ -1,4 +1,4 @@
-﻿Version =20
+﻿Version =21
 VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
@@ -334,7 +334,7 @@ On Error GoTo Err_CanopyGap_Click
    Loop
    IDSave = Obsvalues!StationID    ' Save necessary fields
    ProjectSave = Obsvalues!ProjectID
-   NameSave = Obsvalues![Station Name]
+   NameSave = Obsvalues!StationName
    DateSave = Obsvalues![START_DATE]
    ArrayIndex = 0
    Set WorkOutput = db.OpenRecordset("tbl_wrk_CAB")
@@ -373,7 +373,7 @@ On Error GoTo Err_CanopyGap_Click
          ArrayIndex = ArrayIndex + 1
        Loop
        IDSave = Obsvalues!StationID    ' Save necessary fields
-       NameSave = Obsvalues![Station Name]
+       NameSave = Obsvalues!StationName
        DateSave = Obsvalues!START_DATE
        ProjectSave = Obsvalues!ProjectID
      End If

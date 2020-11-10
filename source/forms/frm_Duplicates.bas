@@ -1,4 +1,4 @@
-﻿Version =20
+﻿Version =21
 VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
@@ -14,10 +14,10 @@ Begin Form
     GridY =24
     DatasheetFontHeight =9
     ItemSuffix =35
-    Left =6420
-    Top =2190
-    Right =13365
-    Bottom =6240
+    Left =5385
+    Top =1755
+    Right =12330
+    Bottom =5805
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x1385341e7574e340
@@ -135,7 +135,7 @@ Begin Form
                     Top =840
                     Width =1860
                     TabIndex =2
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"16\""
+                    ColumnInfo ="\"ProjectID\";\"\";\"Project Name\";\"\";\"10\";\"70\""
                     Name ="ProjectID"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT [tblProjects].[ProjectID], [tblProjects].[ProjectName] FROM tblProjects O"
@@ -357,7 +357,7 @@ On Error GoTo Err_CanopyGap_Click
          WorkOutput.AddNew
          WorkOutput!ProjectID = Obsvalues!ProjectID  '
          WorkOutput!StationID = Obsvalues!StationID  '
-         WorkOutput!StationName = Obsvalues![Station Name]
+         WorkOutput!StationName = Obsvalues!StationName
          WorkOutput!START_DATE = Obsvalues!START_DATE  '
          WorkOutput!CharacteristicName = Obsvalues!DISPLAY_NAME  '
          WorkOutput!RPD = RPD

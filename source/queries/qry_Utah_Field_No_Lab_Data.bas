@@ -8,7 +8,7 @@ End
 Begin OutputColumns
     Expression ="qry_Utah_Field_Results.ProjectID"
     Expression ="qry_Utah_Field_Results.StationID"
-    Expression ="qry_Utah_Field_Results.[Station Name]"
+    Expression ="qry_Utah_Field_Results.StationName"
     Expression ="qry_Utah_Field_Results.START_DATE"
     Alias ="Field_Result_Count"
     Expression ="qry_Utah_Field_Results.Result_Count"
@@ -16,7 +16,7 @@ End
 Begin Joins
     LeftTable ="qry_Utah_Field_Results"
     RightTable ="qry_Utah_Lab_Results"
-    Expression ="qry_Utah_Field_Results.ProjectID = qry_Utah_Lab_Results.ProjectID"
+    Expression ="qry_Utah_Field_Results.START_DATE = qry_Utah_Lab_Results.START_DATE"
     Flag =2
     LeftTable ="qry_Utah_Field_Results"
     RightTable ="qry_Utah_Lab_Results"
@@ -24,7 +24,7 @@ Begin Joins
     Flag =2
     LeftTable ="qry_Utah_Field_Results"
     RightTable ="qry_Utah_Lab_Results"
-    Expression ="qry_Utah_Field_Results.START_DATE = qry_Utah_Lab_Results.START_DATE"
+    Expression ="qry_Utah_Field_Results.ProjectID = qry_Utah_Lab_Results.ProjectID"
     Flag =2
 End
 Begin OrderBy
@@ -54,10 +54,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="qry_Utah_Field_Results.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="qry_Utah_Field_Results.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -68,14 +64,14 @@ Begin
 End
 Begin
     State =0
-    Left =4
-    Top =-3
-    Right =1109
-    Bottom =373
+    Left =99
+    Top =48
+    Right =951
+    Bottom =424
     Left =-1
     Top =-1
-    Right =1073
-    Bottom =81
+    Right =828
+    Bottom =139
     Left =0
     Top =0
     ColumnsShown =539

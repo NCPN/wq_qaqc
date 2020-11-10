@@ -1,4 +1,4 @@
-﻿Version =20
+﻿Version =21
 VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
@@ -14,10 +14,10 @@ Begin Form
     GridY =24
     DatasheetFontHeight =9
     ItemSuffix =35
-    Left =6810
-    Top =2190
-    Right =13755
-    Bottom =6240
+    Left =4170
+    Top =1350
+    Right =11115
+    Bottom =5400
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x1385341e7574e340
@@ -170,7 +170,7 @@ Begin Form
                     Top =840
                     Width =1860
                     TabIndex =3
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"16\""
+                    ColumnInfo ="\"ProjectID\";\"\";\"Project Name\";\"\";\"10\";\"70\""
                     Name ="ProjectID"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT [tblProjects].[ProjectID], [tblProjects].[ProjectName] FROM tblProjects O"
@@ -300,7 +300,7 @@ On Error GoTo Err_CanopyGap_Click
    ' Initialize a bunch of fields
    NameSave = Obsvalues!DISPLAY_NAME
    StationSave = Obsvalues!StationID
-   strStationName = Obsvalues![Station Name]
+   strStationName = Obsvalues![StationName]
    RecordCount = 0
    dBeginDate = Obsvalues!START_DATE
    VSF = 0
@@ -326,7 +326,7 @@ On Error GoTo Err_CanopyGap_Click
        WorkOutput!Effectiveness = (VSF / RecordCount) * 100
        WorkOutput.Update  ' Write record
        StationSave = Obsvalues!StationID
-       strStationName = Obsvalues![Station Name]
+       strStationName = Obsvalues![StationName]
        NameSave = Obsvalues!DISPLAY_NAME
        RecordCount = 0
        dBeginDate = Obsvalues!START_DATE
@@ -344,7 +344,7 @@ On Error GoTo Err_CanopyGap_Click
        End If
      ElseIf Obsvalues!VALUE_STATUS = "R" Then
        If Obsvalues!Detection_Condition = "*Not Reported" Then
-         MsgBox "Value status R Not Reported - " & Obsvalues![Station Name] & " " & Obsvalues!DISPLAY_NAME & " " & Obsvalues!START_DATE, vbOKOnly, "Effectiveness Report"
+         MsgBox "Value status R Not Reported - " & Obsvalues![StationName] & " " & Obsvalues!DISPLAY_NAME & " " & Obsvalues!START_DATE, vbOKOnly, "Effectiveness Report"
        Else
          VSR = VSR + 1
        End If

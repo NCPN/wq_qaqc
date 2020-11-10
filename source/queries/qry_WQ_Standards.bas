@@ -12,7 +12,7 @@ Begin OutputColumns
     Expression ="tblLocationStationGroups.ID_CODE"
     Expression ="tblLocations.State"
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblWQStandards.StandardID"
     Expression ="tblWQStandards.StandardName"
 End
@@ -101,61 +101,65 @@ Begin
         dbBoolean "ColumnHidden" ="0"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =11
-    Top =44
-    Right =1192
-    Bottom =471
+    Left =42
+    Top =28
+    Right =906
+    Bottom =434
     Left =-1
     Top =-1
-    Right =1149
-    Bottom =146
+    Right =840
+    Bottom =186
     Left =0
     Top =0
     ColumnsShown =539
     Begin
-        Left =48
-        Top =12
-        Right =192
-        Bottom =156
+        Left =31
+        Top =11
+        Right =175
+        Bottom =155
         Top =0
         Name ="tblLocations"
         Name =""
     End
     Begin
-        Left =240
-        Top =12
-        Right =384
-        Bottom =156
+        Left =22
+        Top =166
+        Right =220
+        Bottom =310
         Top =0
         Name ="tblLocationStationGroupAssignment"
         Name =""
     End
     Begin
-        Left =432
-        Top =12
-        Right =576
-        Bottom =156
+        Left =263
+        Top =166
+        Right =442
+        Bottom =310
         Top =0
         Name ="tblLocationStationGroups"
         Name =""
     End
     Begin
-        Left =624
-        Top =12
-        Right =768
-        Bottom =156
+        Left =261
+        Top =8
+        Right =405
+        Bottom =152
         Top =0
         Name ="tblLocationWQStandardAssignment"
         Name =""
     End
     Begin
-        Left =816
-        Top =12
-        Right =960
-        Bottom =156
+        Left =468
+        Top =5
+        Right =612
+        Bottom =149
         Top =0
         Name ="tblWQStandards"
         Name =""

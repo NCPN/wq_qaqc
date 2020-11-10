@@ -1,0 +1,14 @@
+# NCPN Water Quality QA/QC Application
+# gitignore file
+
+# --------------------
+#  Untracked Files
+# --------------------
+
+# un-zipped database
+*.accdb
+
+# pdfs, txt, xls files
+*.pdf
+*.txt
+*.xls

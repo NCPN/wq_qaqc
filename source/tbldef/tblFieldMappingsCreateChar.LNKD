@@ -1,3 +1,4 @@
 ﻿tblFieldMappingsCreateChar
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblFieldMappingsCreateChar
+SpecName;+Org_ID

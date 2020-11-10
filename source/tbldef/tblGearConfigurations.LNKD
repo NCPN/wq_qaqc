@@ -1,3 +1,4 @@
 ﻿tblGearConfigurations
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblGearConfigurations
+LocGrCfg_IS_NUMBER;+LocGrCfg_ORG_ID

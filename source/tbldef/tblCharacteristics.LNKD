@@ -1,3 +1,4 @@
 ﻿tblCharacteristics
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblCharacteristics
+LocCHDEF_IS_NUMBER;+LocCHDEF_ORG_ID

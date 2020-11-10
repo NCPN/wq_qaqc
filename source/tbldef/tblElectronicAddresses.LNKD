@@ -1,3 +1,4 @@
 ﻿tblElectronicAddresses
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblElectronicAddresses
+LocEADDR_IS_NUMBER;+LocEADDR_ORG_ID

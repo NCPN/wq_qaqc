@@ -7,7 +7,7 @@ End
 Begin OutputColumns
     Expression ="qry_NCPN_UTE_Water_Temp.ProjectID"
     Expression ="qry_NCPN_UTE_Water_Temp.StationID"
-    Expression ="qry_NCPN_UTE_Water_Temp.[Station Name]"
+    Expression ="qry_NCPN_UTE_Water_Temp.StationName"
     Expression ="qry_NCPN_UTE_Water_Temp.START_DATE"
     Alias ="pH_Result"
     Expression ="qry_NCPN_UTE_pH.RESULT_TEXT"
@@ -21,7 +21,7 @@ End
 Begin Joins
     LeftTable ="qry_NCPN_UTE_Water_Temp"
     RightTable ="qry_NCPN_UTE_pH"
-    Expression ="qry_NCPN_UTE_Water_Temp.ProjectID = qry_NCPN_UTE_pH.ProjectID"
+    Expression ="qry_NCPN_UTE_Water_Temp.START_DATE = qry_NCPN_UTE_pH.START_DATE"
     Flag =1
     LeftTable ="qry_NCPN_UTE_Water_Temp"
     RightTable ="qry_NCPN_UTE_pH"
@@ -29,7 +29,7 @@ Begin Joins
     Flag =1
     LeftTable ="qry_NCPN_UTE_Water_Temp"
     RightTable ="qry_NCPN_UTE_pH"
-    Expression ="qry_NCPN_UTE_Water_Temp.START_DATE = qry_NCPN_UTE_pH.START_DATE"
+    Expression ="qry_NCPN_UTE_Water_Temp.ProjectID = qry_NCPN_UTE_pH.ProjectID"
     Flag =1
 End
 Begin OrderBy
@@ -58,10 +58,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="qry_NCPN_UTE_Water_Temp.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="qry_NCPN_UTE_Water_Temp.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -81,34 +77,38 @@ Begin
         dbText "Name" ="pH_Status"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="qry_NCPN_UTE_Water_Temp.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =3
-    Top =17
-    Right =1184
-    Bottom =735
+    Left =34
+    Top =114
+    Right =1215
+    Bottom =594
     Left =-1
     Top =-1
-    Right =1149
-    Bottom =350
+    Right =1153
+    Bottom =174
     Left =0
     Top =0
     ColumnsShown =539
     Begin
         Left =48
         Top =12
-        Right =192
+        Right =280
         Bottom =156
         Top =0
         Name ="qry_NCPN_UTE_Water_Temp"
         Name =""
     End
     Begin
-        Left =240
-        Top =12
-        Right =384
-        Bottom =156
+        Left =371
+        Top =13
+        Right =554
+        Bottom =157
         Top =0
         Name ="qry_NCPN_UTE_pH"
         Name =""

@@ -1,3 +1,4 @@
 ﻿tblPreserveTransportStore
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblPreserveTransportStore
+LocSDP_IS_NUMBER;+LocSDP_ORG_ID

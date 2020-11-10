@@ -1,10 +1,10 @@
 ﻿Operation =1
 Option =0
 Where ="(((tblProjects.ProjectID)=\"NCPN_UTE\" Or (tblProjects.ProjectID)=\"NCPN_UTM\") "
-    "AND ((tblVisits.START_DATE) Between #3/1/2009# And #9/30/2015#) AND ((tblCharact"
-    "eristics.FIELD_LAB)=\"Lab\") AND ((tblResults.VALUE_STATUS)<>\"R\") AND ((tblCha"
-    "racteristics.DISPLAY_NAME)=\"pH\" Or (tblCharacteristics.DISPLAY_NAME)=\"Specifi"
-    "c conductance\" Or (tblCharacteristics.DISPLAY_NAME)=\"Turbidity\"))"
+    "AND ((tblVisits.START_DATE) Between #10/1/2018# And #9/30/2019#) AND ((tblCharac"
+    "teristics.FIELD_LAB)=\"Lab\") AND ((tblResults.VALUE_STATUS)<>\"R\") AND ((tblCh"
+    "aracteristics.DISPLAY_NAME)=\"pH\" Or (tblCharacteristics.DISPLAY_NAME)=\"Specif"
+    "ic conductance\" Or (tblCharacteristics.DISPLAY_NAME)=\"Turbidity\"))"
 Begin InputTables
     Name ="tblProjects"
     Name ="tblLocationProjectAssignment"
@@ -17,7 +17,7 @@ End
 Begin OutputColumns
     Expression ="tblProjects.ProjectID"
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblVisits.START_DATE"
     Expression ="tblCharacteristics.FIELD_LAB"
     Expression ="tblResults.VALUE_STATUS"
@@ -123,10 +123,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblLocations.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblVisits.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -176,79 +172,83 @@ Begin
         dbText "Name" ="tblResults.LocRSULT_ORG_ID"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =18
-    Top =191
-    Right =1093
-    Bottom =691
+    Left =21
+    Top =150
+    Right =961
+    Bottom =593
     Left =-1
     Top =-1
-    Right =1043
-    Bottom =235
+    Right =916
+    Bottom =217
     Left =0
     Top =0
     ColumnsShown =539
     Begin
-        Left =48
+        Left =19
         Top =12
-        Right =192
+        Right =163
         Bottom =156
         Top =0
         Name ="tblProjects"
         Name =""
     End
     Begin
-        Left =240
-        Top =12
-        Right =405
-        Bottom =156
+        Left =200
+        Top =14
+        Right =365
+        Bottom =158
         Top =0
         Name ="tblLocationProjectAssignment"
         Name =""
     End
     Begin
-        Left =510
-        Top =13
-        Right =654
-        Bottom =157
+        Left =400
+        Top =16
+        Right =544
+        Bottom =160
         Top =0
         Name ="tblLocations"
         Name =""
     End
     Begin
-        Left =178
-        Top =168
-        Right =322
-        Bottom =312
+        Left =205
+        Top =173
+        Right =349
+        Bottom =317
         Top =0
         Name ="tblVisits"
         Name =""
     End
     Begin
-        Left =368
-        Top =162
-        Right =512
-        Bottom =306
+        Left =402
+        Top =172
+        Right =546
+        Bottom =316
         Top =0
         Name ="tblActivities"
         Name =""
     End
     Begin
-        Left =550
-        Top =159
-        Right =710
-        Bottom =303
+        Left =577
+        Top =171
+        Right =722
+        Bottom =315
         Top =0
         Name ="tblResults"
         Name =""
     End
     Begin
-        Left =724
-        Top =158
-        Right =868
-        Bottom =302
+        Left =759
+        Top =170
+        Right =903
+        Bottom =314
         Top =0
         Name ="tblCharacteristics"
         Name =""

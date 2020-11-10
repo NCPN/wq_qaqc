@@ -1,3 +1,4 @@
 ﻿tblPeopleRoleAssignment
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblPeopleRoleAssignment
+LocARole_IS_Number;+LocARole_Org_ID

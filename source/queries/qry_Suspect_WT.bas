@@ -1,7 +1,7 @@
 ﻿Operation =1
 Option =0
 Where ="(((tblProjects.ProjectID)=\"NCPN_UTE\") AND ((tblVisits.START_DATE) Between #10/"
-    "1/2005# And #9/30/2012#) AND ((tblCharacteristics.DISPLAY_NAME)=\"Temperature, w"
+    "1/2018# And #9/30/2019#) AND ((tblCharacteristics.DISPLAY_NAME)=\"Temperature, w"
     "ater\") AND ((tblResults.DETECTION_CONDITION)<>\"*Not Reported\") AND ((tblResul"
     "ts.VALUE_STATUS)=\"P\") AND ((IIf(IsNumeric([RESULT_TEXT]),CDbl([RESULT_TEXT]),-"
     "999))<0 Or (IIf(IsNumeric([RESULT_TEXT]),CDbl([RESULT_TEXT]),-999))>30))"
@@ -16,7 +16,7 @@ End
 Begin OutputColumns
     Expression ="tblProjects.ProjectID"
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblVisits.START_DATE"
     Expression ="tblCharacteristics.DISPLAY_NAME"
     Expression ="tblResults.DETECTION_CONDITION"
@@ -95,10 +95,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblLocations.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblVisits.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -136,70 +132,74 @@ Begin
         dbBoolean "ColumnHidden" ="0"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =3
-    Top =39
-    Right =1295
-    Bottom =542
+    Left =21
+    Top =13
+    Right =1017
+    Bottom =442
     Left =-1
     Top =-1
-    Right =1260
-    Bottom =32
+    Right =972
+    Bottom =183
     Left =0
     Top =0
     ColumnsShown =539
     Begin
-        Left =48
-        Top =12
-        Right =192
-        Bottom =156
+        Left =19
+        Top =10
+        Right =163
+        Bottom =154
         Top =0
         Name ="tblProjects"
         Name =""
     End
     Begin
-        Left =240
-        Top =12
-        Right =384
-        Bottom =156
+        Left =15
+        Top =156
+        Right =159
+        Bottom =300
         Top =0
         Name ="tblLocations"
         Name =""
     End
     Begin
-        Left =738
-        Top =14
-        Right =882
-        Bottom =158
+        Left =442
+        Top =23
+        Right =586
+        Bottom =167
         Top =0
         Name ="tblActivities"
         Name =""
     End
     Begin
-        Left =478
-        Top =14
-        Right =668
-        Bottom =158
+        Left =217
+        Top =23
+        Right =407
+        Bottom =167
         Top =0
         Name ="tblVisits"
         Name =""
     End
     Begin
-        Left =945
-        Top =13
-        Right =1104
-        Bottom =155
+        Left =626
+        Top =29
+        Right =785
+        Bottom =171
         Top =0
         Name ="tblResults"
         Name =""
     End
     Begin
-        Left =1160
-        Top =13
-        Right =1304
-        Bottom =157
+        Left =833
+        Top =29
+        Right =977
+        Bottom =173
         Top =0
         Name ="tblCharacteristics"
         Name =""

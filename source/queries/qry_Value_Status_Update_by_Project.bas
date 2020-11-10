@@ -143,14 +143,14 @@ Begin
 End
 Begin
     State =0
-    Left =16
-    Top =41
-    Right =1028
-    Bottom =566
+    Left =107
+    Top =111
+    Right =969
+    Bottom =636
     Left =-1
     Top =-1
-    Right =980
-    Bottom =255
+    Right =838
+    Bottom =296
     Left =0
     Top =0
     ColumnsShown =579
@@ -173,46 +173,46 @@ Begin
         Name =""
     End
     Begin
-        Left =432
-        Top =12
-        Right =576
-        Bottom =156
+        Left =41
+        Top =171
+        Right =185
+        Bottom =315
         Top =0
         Name ="tblLocations"
         Name =""
     End
     Begin
-        Left =178
-        Top =168
-        Right =322
-        Bottom =312
+        Left =237
+        Top =169
+        Right =381
+        Bottom =313
         Top =0
         Name ="tblVisits"
         Name =""
     End
     Begin
-        Left =368
-        Top =162
-        Right =512
-        Bottom =306
+        Left =398
+        Top =159
+        Right =542
+        Bottom =303
         Top =0
         Name ="tblActivities"
         Name =""
     End
     Begin
-        Left =550
-        Top =159
-        Right =710
-        Bottom =303
+        Left =573
+        Top =155
+        Right =733
+        Bottom =299
         Top =0
         Name ="tblResults"
         Name =""
     End
     Begin
-        Left =724
-        Top =158
-        Right =868
-        Bottom =302
+        Left =773
+        Top =155
+        Right =917
+        Bottom =299
         Top =0
         Name ="tblCharacteristics"
         Name =""

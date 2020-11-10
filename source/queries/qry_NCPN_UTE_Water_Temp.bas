@@ -15,7 +15,7 @@ End
 Begin OutputColumns
     Expression ="tblProjects.ProjectID"
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblVisits.START_DATE"
     Expression ="tblCharacteristics.DISPLAY_NAME"
     Expression ="tblResults.RESULT_TEXT"
@@ -107,10 +107,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblLocations.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblVisits.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -128,17 +124,21 @@ Begin
         dbBoolean "ColumnHidden" ="0"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =0
-    Top =40
-    Right =1181
-    Bottom =758
+    Left =17
+    Top =39
+    Right =1185
+    Bottom =527
     Left =-1
     Top =-1
-    Right =1149
-    Bottom =367
+    Right =1140
+    Bottom =277
     Left =0
     Top =0
     ColumnsShown =539
@@ -152,18 +152,18 @@ Begin
         Name =""
     End
     Begin
-        Left =83
-        Top =171
-        Right =227
-        Bottom =315
+        Left =9
+        Top =164
+        Right =153
+        Bottom =308
         Top =0
         Name ="tblLocationProjectAssignment"
         Name =""
     End
     Begin
-        Left =183
+        Left =197
         Top =16
-        Right =327
+        Right =341
         Bottom =160
         Top =0
         Name ="tblLocations"

@@ -1,3 +1,4 @@
 ﻿tblCharacteristicAnlGroupAssignment
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblCharacteristicAnlGroupAssignment
+LocChAnlGrpAss_IS_NUMBER;+LocChAnlGrpAss_ORG_ID

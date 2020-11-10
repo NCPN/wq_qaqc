@@ -1,7 +1,7 @@
 ﻿Operation =1
 Option =0
 Where ="(((tblProjects.ProjectID)=\"NCPN_UTE\" Or (tblProjects.ProjectID)=\"NCPN_UTM\") "
-    "AND ((tblResults.VALUE_STATUS)<>\"F\"))"
+    "AND ((tblResults.VALUE_STATUS)=\"P\"))"
 Begin InputTables
     Name ="tblProjects"
     Name ="tblLocationProjectAssignment"
@@ -17,7 +17,7 @@ Begin OutputColumns
     Expression ="tblProjects.ProjectID"
     Expression ="tblLocationStationGroups.ID_CODE"
     Expression ="tblLocations.StationID"
-    Expression ="tblLocations.[Station Name]"
+    Expression ="tblLocations.StationName"
     Expression ="tblVisits.START_DATE"
     Expression ="tblCharacteristics.FIELD_LAB"
     Expression ="tblResults.VALUE_STATUS"
@@ -144,10 +144,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblLocations.[Station Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblVisits.START_DATE"
         dbLong "AggregateType" ="-1"
     End
@@ -203,17 +199,21 @@ Begin
         dbText "Name" ="tblResults.LocRSULT_ORG_ID"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblLocations.StationName"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =10
-    Top =22
-    Right =1263
-    Bottom =547
+    Left =59
+    Top =189
+    Right =1070
+    Bottom =714
     Left =-1
     Top =-1
-    Right =1221
-    Bottom =207
+    Right =987
+    Bottom =264
     Left =0
     Top =0
     ColumnsShown =539

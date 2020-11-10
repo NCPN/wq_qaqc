@@ -1,3 +1,4 @@
 ﻿tblWQStandardCriteria
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblWQStandardCriteria
+StdChar_IS_NUMBER;+StdChar_Org_ID

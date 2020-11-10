@@ -1,3 +1,4 @@
 ﻿tblFieldMappingsChar
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblFieldMappingsChar
+Org_ID;+SpecName;+LocCHDEF_IS_NUMBER

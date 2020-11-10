@@ -1,3 +1,4 @@
 ﻿tblFieldMappingsStation
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblFieldMappingsStation
+Org_ID;+SpecName

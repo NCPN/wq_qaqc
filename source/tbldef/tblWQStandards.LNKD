@@ -1,3 +1,4 @@
 ﻿tblWQStandards
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblWQStandards
+Standard_IS_NUMBER;+Standard_Org_ID

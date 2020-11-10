@@ -1,3 +1,4 @@
 ﻿tblCharacteristicProjectAssignment
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblCharacteristicProjectAssignment
+LocChPrAss_IS_NUMBER;+LocChPrASS_ORG_ID

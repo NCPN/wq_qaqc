@@ -1,4 +1,4 @@
-﻿Version =20
+﻿Version =21
 VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
@@ -14,10 +14,10 @@ Begin Form
     GridY =24
     DatasheetFontHeight =9
     ItemSuffix =35
-    Left =5325
-    Top =2115
-    Right =12270
-    Bottom =6165
+    Left =4956
+    Top =1848
+    Right =11904
+    Bottom =5904
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x1385341e7574e340
@@ -86,10 +86,10 @@ Begin Form
                     LayoutCachedTop =2340
                     LayoutCachedWidth =5879
                     LayoutCachedHeight =2640
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
                 End
                 Begin ComboBox
                     OverlapFlags =85
@@ -156,10 +156,10 @@ Begin Form
                     LayoutCachedTop =2340
                     LayoutCachedWidth =3360
                     LayoutCachedHeight =2640
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
                 End
                 Begin ComboBox
                     OverlapFlags =85
@@ -170,7 +170,7 @@ Begin Form
                     Top =840
                     Width =1860
                     TabIndex =3
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"16\""
+                    ColumnInfo ="\"ProjectID\";\"\";\"Project Name\";\"\";\"10\";\"70\""
                     Name ="ProjectID"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT [tblProjects].[ProjectID], [tblProjects].[ProjectName] FROM tblProjects O"
@@ -310,7 +310,7 @@ On Error GoTo Err_CanopyGap_Click
    End If
    ' Initialize a bunch of fields
    StationSave = Obsvalues!StationID
-   strStationName = Obsvalues![Station Name]
+   strStationName = Obsvalues!StationName
    dBeginDate = Obsvalues!START_DATE
    Set WorkOutput = db.OpenRecordset("tbl_wrk_Representativeness_Stage")
    Do Until Obsvalues.EOF
@@ -333,7 +333,7 @@ On Error GoTo Err_CanopyGap_Click
          ArrayIndex = ArrayIndex + 1
        Loop
        StationSave = Obsvalues!StationID
-       strStationName = Obsvalues![Station Name]
+       strStationName = Obsvalues!StationName
        dBeginDate = Obsvalues!START_DATE
        ArrayIndex = 0
        Do Until ArrayIndex > 3           ' Initialize array values

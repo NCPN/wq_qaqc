@@ -1,3 +1,4 @@
 ﻿tblLocationStationGroups
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblLocationStationGroups
+LocStatnGRP_IS_NUMBER;+LocStatnGRP_ORG_ID

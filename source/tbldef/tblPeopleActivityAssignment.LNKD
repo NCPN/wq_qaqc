@@ -1,3 +1,4 @@
 ﻿tblPeopleActivityAssignment
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblPeopleActivityAssignment
+LocAPerAct_IS_Number;+LocAPerAct_Org_ID

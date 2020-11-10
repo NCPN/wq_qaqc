@@ -1,3 +1,4 @@
 ﻿tblRecordLocks
-;DATABASE=C:\NPSTORET\NPSTORET_BE.MDB
+;DATABASE=C:\NPSTORET\NPSTORET_BE.accdb
 tblRecordLocks
+TableName;+IS_Number;+Org_ID
